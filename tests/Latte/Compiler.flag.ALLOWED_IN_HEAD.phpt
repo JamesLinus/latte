@@ -14,12 +14,17 @@ class TestMacro implements IMacro
 	public $inHead;
 	public $compiler;
 
+
 	function initialize()
 	{
 		$this->inHead = NULL;
 	}
 
-	function finalize() {}
+
+	function finalize()
+	{
+	}
+
 
 	function nodeOpened(MacroNode $node)
 	{
@@ -27,7 +32,10 @@ class TestMacro implements IMacro
 		$this->inHead = $this->compiler->isInHead();
 	}
 
-	function nodeClosed(MacroNode $node) {}
+
+	function nodeClosed(MacroNode $node)
+	{
+	}
 }
 
 

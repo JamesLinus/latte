@@ -11,9 +11,15 @@ require __DIR__ . '/../bootstrap.php';
 
 class TestMacro implements IMacro
 {
-	function initialize() {}
+	function initialize()
+	{
+	}
 
-	function finalize() {}
+
+	function finalize()
+	{
+	}
+
 
 	function nodeOpened(MacroNode $node)
 	{
@@ -21,7 +27,10 @@ class TestMacro implements IMacro
 		$node->closingCode = 'closing';
 	}
 
-	function nodeClosed(MacroNode $node) {}
+
+	function nodeClosed(MacroNode $node)
+	{
+	}
 }
 
 
